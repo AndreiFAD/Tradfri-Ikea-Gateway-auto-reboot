@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: cp1250 -*-
-__author__ = 'Fekete Andr�s Demeter'
+__author__ = 'Fekete Andras Demeter'
 
 import asyncio, uuid, json
 from aiocoap import Message, Context
