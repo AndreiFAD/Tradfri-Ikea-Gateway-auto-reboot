@@ -12,9 +12,9 @@ requirements (aiocoap requires Python '>=3.4.4') (pip install):<br>
 aiocoap==0.4a1<br>
 DTLSSocket==0.1.7<br>
 typing>=3,<4<br>
-
->> TradfriGatewayAutoreboot.py<br>
 <br>
+>> TradfriGatewayAutoreboot.py<br>
+
 #TODO: Change securityid and ip:<br>
 securityid = "Asd1Asd2Asd3Asd4" # Security Code - from Gateway (16 characters)<br>
 ip = "111.111.1.111"            # your device local ip<br>
