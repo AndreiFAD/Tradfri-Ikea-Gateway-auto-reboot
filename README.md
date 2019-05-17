@@ -1,7 +1,7 @@
-# Tradfri Ikea Gateway Autoreboot
+# Tradfri Ikea Gateway Autoreboot<br>
 
-I want to restart IKEA Tradfri Gateway every day morning with Raspberry Zero W, 
-the script with aiocoap creates a command for this idea.
+I want to restart IKEA Tradfri Gateway every day morning with Raspberry Zero W, <br>
+the script with aiocoap creates a command for this idea.<br>
 
 -------------------------------------------------------------------------------------------------
 
