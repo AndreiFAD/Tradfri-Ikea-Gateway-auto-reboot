@@ -5,47 +5,47 @@ the script with aiocoap creates a command for this idea.
 
 -------------------------------------------------------------------------------------------------
 
-source of my idea: https://github.com/ggravlingen/pytradfri 
+source of my idea: https://github.com/ggravlingen/pytradfri <br>
 
-requirements (pip install):
+requirements (pip install):<br>
 
 aiocoap==0.4a1<br>
 DTLSSocket==0.1.7<br>
-typing>=3,<4
+typing>=3,<4<br>
 
-output command string:
-coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"
-
--------------------------------------------------------------------------------------------------
-
-For using you need install COAP-CLIENT:
-
-sudo apt-get install libtool git build-essential autoconf automake -y
-sudo git clone --recursive https://github.com/obgm/libcoap.git
-cd libcoap
-sudo git checkout dtls
-sudo git submodule update --init --recursive
-sudo ./autogen.sh
-sudo ./configure --disable-documentation --disable-shared
-sudo make
-sudo make install
-cd
+output command string:<br>
+coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"<br>
 
 -------------------------------------------------------------------------------------------------
 
-create .sh file:
-sudo nano /usr/local/bin/rebootTradfri.sh
-    add line: 
-    coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"
+For using you need install COAP-CLIENT:<br>
 
-Add Execute permission:
-sudo chmod +x /usr/local/bin/rebootTradfri.sh
+sudo apt-get install libtool git build-essential autoconf automake -y<br>
+sudo git clone --recursive https://github.com/obgm/libcoap.git<br>
+cd libcoap<br>
+sudo git checkout dtls<br>
+sudo git submodule update --init --recursive<br>
+sudo ./autogen.sh<br>
+sudo ./configure --disable-documentation --disable-shared<br>
+sudo make<br>
+sudo make install<br>
+cd<br>
 
-sudo crontab -e
-    and add new line for every day reboot at 5 o'clock:
-    0 5 * * * /usr/bin/sudo -H /usr/local/bin/rebootTradfri.sh >> /dev/null 2>&1
+-------------------------------------------------------------------------------------------------
 
-sudo reboot
+create .sh file:<br>
+sudo nano /usr/local/bin/rebootTradfri.sh<br>
+    add line:<br> 
+    coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"<br>
+<br>
+Add Execute permission:<br>
+sudo chmod +x /usr/local/bin/rebootTradfri.sh<br>
 
-The quick and simple editor for cron schedule expressions by Cronitor:
-https://crontab.guru/every-day 
+sudo crontab -e<br>
+    and add new line for every day reboot at 5 o'clock:<br>
+    0 5 * * * /usr/bin/sudo -H /usr/local/bin/rebootTradfri.sh >> /dev/null 2>&1<br>
+
+sudo reboot<br>
+
+The quick and simple editor for cron schedule expressions by Cronitor:<br>
+https://crontab.guru/every-day <br>
