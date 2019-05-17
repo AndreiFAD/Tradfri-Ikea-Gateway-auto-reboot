@@ -1,4 +1,4 @@
-# Tradfri Ikea Gateway Autoreboot<br>
+# Tradfri Ikea Gateway auto reboot<br>
 
 I want to restart IKEA Tradfri Gateway every day morning with Raspberry Zero W, <br>
 the script with aiocoap creates a command for this idea.<br>
@@ -13,7 +13,7 @@ aiocoap==0.4a1<br>
 DTLSSocket==0.1.7<br>
 typing>=3,<4<br>
 
-TradfriIkeaGatewayAutoreboot/TradfriGatewayAutoreboot.py<br>
+>> TradfriGatewayAutoreboot.py<br>
 <br>
 #TODO: Change securityid and ip:<br>
 securityid = "Asd1Asd2Asd3Asd4" # Security Code - from Gateway (16 characters)<br>
