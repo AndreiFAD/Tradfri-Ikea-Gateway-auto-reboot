@@ -8,9 +8,10 @@ the script with aiocoap creates a command for this idea.
 source of my idea: https://github.com/ggravlingen/pytradfri 
 
 requirements (pip install):
-pip install aiocoap==0.4a1
-pip install DTLSSocket==0.1.7
-pip install typing>=3,<4
+
+aiocoap==0.4a1<br>
+DTLSSocket==0.1.7<br>
+typing>=3,<4
 
 output command string:
 coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"
