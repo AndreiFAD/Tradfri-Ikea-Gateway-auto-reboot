@@ -7,7 +7,7 @@ source of my idea: https://github.com/ggravlingen/pytradfri <br>
 
 -------------------------------------------------------------------------------------------------
 
-requirements (pip install):<br>
+requirements (aiocoap requires Python '>=3.4.4') (pip install):<br>
 
 aiocoap==0.4a1<br>
 DTLSSocket==0.1.7<br>
