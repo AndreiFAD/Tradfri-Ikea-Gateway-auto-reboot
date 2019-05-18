@@ -13,7 +13,9 @@ for all requirements install, use this: $ pip3 install pytradfri[async] typing==
 or details:<br>
 $ pip3 install aiocoap==0.4a1 DTLSSocket==0.1.7 typing==3.6.6<br>
 <br>
-
+$ sudo nano TradfriGatewayAutoreboot.py <br>
+line: 129, 130<br>
+<br>
 #TODO: Change securityid and ip:<br>
 securityid = "Asd1Asd2Asd3Asd4" # Security Code - from Gateway (16 characters)<br>
 ip = "111.111.1.111"            # your device local ip<br>
