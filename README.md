@@ -21,9 +21,8 @@ line: 129, 130<br>
 securityid = "Asd1Asd2Asd3Asd4" # Security Code - from Gateway (16 characters)<br>
 ip = "111.111.1.111"            # your device local ip<br>
 <br>
-if you run without aiocoap-tinydtls ignores error/warrning messages: <br>
+With this command, it runs without aiocoap-tinydtls error/warrning messages: <br>
 $ python3 TradfriGatewayAutoreboot.py 2> /dev/null<br>
-and run :)<br>
 <br>
 pi@raspberrypi:~ $ python3 TradfriGatewayAutoreboot.py  2> /dev/null <br>
 ----- HERE IS YOUR COMMAND: coap-client -u XXX -k XXX -v 0 -m post "coaps://1.1.1.1:5684/15011/9030" ----- <br><br>
