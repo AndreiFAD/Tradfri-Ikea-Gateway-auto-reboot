@@ -26,7 +26,7 @@ $ python3 TradfriGatewayAutoreboot.py 2> /dev/null<br>
 and run :)<br>
 <br>
 pi@raspberrypi:~ $ python3 TradfriGatewayAutoreboot.py  2> /dev/null <br>
------ HERE IS YOUR COMMAND: coap-client -u XXXXXXXX -k XXXXXXXX -v 0 -m post "coaps://111.111.1.111:5684/15011/9030" ----- <br><br>
+----- HERE IS YOUR COMMAND: coap-client -u XXX -k XXX -v 0 -m post "coaps://1.1.1.1:5684/15011/9030" ----- <br><br>
 
 -------------------------------------------------------------------------------------------------
 
