@@ -9,7 +9,7 @@ source of my idea: https://github.com/ggravlingen/pytradfri <br>
 
 requirements (aiocoap requires Python '>=3.4.4'):<br>
 
-for all requirements install, use this: $ pip3 install pytradfri[async] typing==3.6.6 <br><br>
+for all requirements install, use this: $ pip3 install pytradfri[async] typing==3.6.6 <br>
 or details:<br>
 $ pip3 install aiocoap==0.4a1 DTLSSocket==0.1.7 typing==3.6.6<br>
 <br>
