@@ -45,18 +45,18 @@ cd<br>
 -------------------------------------------------------------------------------------------------
 
 create .sh file:<br>
-sudo nano /usr/local/bin/rebootTradfri.sh<br>
+pi@raspberrypi:~ $ sudo nano /usr/local/bin/rebootTradfri.sh<br>
     add line:<br> 
     coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"<br>
 <br>
 Add Execute permission:<br>
-sudo chmod +x /usr/local/bin/rebootTradfri.sh<br>
+pi@raspberrypi:~ $ sudo chmod +x /usr/local/bin/rebootTradfri.sh<br>
 
-sudo crontab -e<br>
+pi@raspberrypi:~ $ sudo crontab -e<br>
     and add new line for every day reboot at 5 o'clock:<br>
     0 5 * * * /usr/bin/sudo -H /usr/local/bin/rebootTradfri.sh >> /dev/null 2>&1<br>
 
-sudo reboot<br>
+pi@raspberrypi:~ $ sudo reboot<br>
 
 The quick and simple editor for cron schedule expressions by Cronitor:<br>
 https://crontab.guru/every-day <br>
