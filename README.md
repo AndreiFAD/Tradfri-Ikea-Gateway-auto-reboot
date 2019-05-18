@@ -7,11 +7,11 @@ source of my idea: https://github.com/ggravlingen/pytradfri <br>
 
 -------------------------------------------------------------------------------------------------
 
-requirements (aiocoap requires Python '>=3.4.4') (pip install):<br>
+requirements (aiocoap requires Python '>=3.4.4'):<br>
 
-aiocoap==0.4a1<br>
-DTLSSocket==0.1.7<br>
-typing>=3,<4<br>
+for all requirements install, use this: $ pip3 install pytradfri[async] typing==3.6.6 <br><br>
+or details:<br>
+$ pip3 install aiocoap==0.4a1 DTLSSocket==0.1.7 typing==3.6.6<br>
 <br>
 if you run without aiocoap-tinydtls ignores error/warrning messages: <br>
 $ python3 TradfriGatewayAutoreboot.py 2> /dev/null<br>
@@ -22,8 +22,8 @@ ip = "111.111.1.111"            # your device local ip<br>
 <br>
 and run :)<br>
 <br>
-output command string:<br>
-coap-client -u XXXXXXXXXXXX -k XXXXXXXXX -v 0 -m post "coaps://XXXXXXXXXXX:5684/15011/9030"<br>
+pi@raspberrypi:~ $ python3 TradfriGatewayAutoreboot.py  2> /dev/null <br>
+----- HERE IS YOUR COMMAND: coap-client -u XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -k XXXXXXXXXXXXXXXX -v 0 -m post "coaps://192.168.1.127:5684/15011/9030" ----- <br><br>
 
 -------------------------------------------------------------------------------------------------
 
