@@ -9,11 +9,12 @@ source of my idea: https://github.com/ggravlingen/pytradfri <br>
 
 requirements (aiocoap requires Python '>=3.4.4'):<br>
 
-for all requirements install, use this: $ pip3 install pytradfri[async] typing==3.6.6 <br>
+for all requirements install, use this: <br>
+pi@raspberrypi:~ $ pip3 install pytradfri[async] typing==3.6.6 <br>
 or details:<br>
-$ pip3 install aiocoap==0.4a1 DTLSSocket==0.1.7 typing==3.6.6<br>
+pi@raspberrypi:~ $ pip3 install aiocoap==0.4a1 DTLSSocket==0.1.7 typing==3.6.6<br>
 <br>
-$ sudo nano TradfriGatewayAutoreboot.py <br>
+pi@raspberrypi:~ $ sudo nano TradfriGatewayAutoreboot.py <br>
 line: 129, 130<br>
 <br>
 #TODO: Change securityid and ip:<br>
@@ -22,7 +23,6 @@ ip = "111.111.1.111"            # your device local ip<br>
 <br>
 if you run without aiocoap-tinydtls ignores error/warrning messages: <br>
 $ python3 TradfriGatewayAutoreboot.py 2> /dev/null<br>
-
 and run :)<br>
 <br>
 pi@raspberrypi:~ $ python3 TradfriGatewayAutoreboot.py  2> /dev/null <br>
